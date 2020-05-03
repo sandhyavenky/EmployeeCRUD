@@ -34,11 +34,35 @@ displayEmployee(){
 submitEmployee(){
   axios.delete(`http://localhost:3001/${this.state.empid}`)
   .then(res => {
-    this.setState({
-      employeeStatus: res.data.message
-    })
-  })
+    if(res.data.empid){
+      this.setState({
+        employeeStatus: res.data.message
+      })
+      }
+    else {
+      throw "ID does not exist"
+    }
+  }, error => alert(error.response.status)) 
+  .catch(error => {
+    alert(error)
+  })     
 }
+
+
+// axios.get(`http://localhost:3001/${this.state.empid}`)
+//     .then(res=> {
+//       if(res.data.empid){
+//         this.setState({emp: res.data})
+//       }
+//       else{
+//         throw "Employee ID not found"; 
+//       } 
+//     }).catch(error => {
+//       alert(error)
+//     });
+
+
+
 render(){
   return(
     <div>
