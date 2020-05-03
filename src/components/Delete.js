@@ -48,21 +48,6 @@ submitEmployee(){
   })     
 }
 
-
-// axios.get(`http://localhost:3001/${this.state.empid}`)
-//     .then(res=> {
-//       if(res.data.empid){
-//         this.setState({emp: res.data})
-//       }
-//       else{
-//         throw "Employee ID not found"; 
-//       } 
-//     }).catch(error => {
-//       alert(error)
-//     });
-
-
-
 render(){
   return(
     <div>
