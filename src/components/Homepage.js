@@ -11,12 +11,6 @@ import history from './history';
 const Homepage = (props) => {
   return(
     <Router history={history}>
-      <nav className="navbar navbar-default"> 
-            <ul className="nav navbar-nav">
-            <h4>Click the link to navigate!!</h4>
-              <li><Link to={"/"}> Welcome!</Link></li>
-            </ul>
-      </nav>
       <Switch>
         <Route exact path="/">
           <div>
