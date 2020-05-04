@@ -1,6 +1,6 @@
 import React from "react";
 import {  Router, Link, Switch, Route } from "react-router-dom";
-import {Container, Form} from 'react-bootstrap'
+import {Container, Form, Badge} from 'react-bootstrap'
 
 import Create from './Create';
 import Read from './Read';
@@ -37,6 +37,9 @@ const Homepage = (props) => {
           </Route>
           <Route path="/delete">
             <Delete />
+          </Route>
+          <Route path="*">
+             <h1><Badge variant="secondary" >404: Unknown Page! Please enter correct URL!</Badge></h1>
           </Route>
       </Switch>    
     </Router>
