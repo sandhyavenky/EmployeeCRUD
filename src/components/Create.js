@@ -48,8 +48,7 @@ submitDetails(){
       })
     })
 }
-clearDetails = (e) => {   
-  this.state.emp.empid=""
+clearDetails = () => {   
        window.render()
 }
 render(){
