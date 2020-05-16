@@ -1,68 +1,122 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Employee - CRUD Operations
 
-## Available Scripts
+Simple Employee Record maintaining details with React.js,Node.js with ExpressJS and AWS Dynamo DB with IDE being VScode
 
-In the project directory, you can run:
+## Table of Contents
 
-### `yarn start`
+1 Synopsis
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2 Technologies
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+3 Setup
 
-### `yarn test`
+4 Launch
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5 Description
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Synopsis
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Employee-Crud operation is a small basic application which revolves around the 4 basic operations namely Create, Read, Update and Delete followed by some validations making it quite a real web application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies
+###### Project is created with
 
-### `yarn eject`
+* ExpressJS
+* AWS DynamoDB
+* Visual Studio Code
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Client-side 
+###### Libraries/Dependencies
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* React Bootstrap
+* React DOM
+* React Router DOM
+* Axios
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Set up
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Install VS code
 
-## Learn More
+###### Terminal commands
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+$ npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+$ npm run node --version
 
-### Code Splitting
+version -> v13.1.0 (npm v6.14.4)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+$ npm yarn
 
-### Analyzing the Bundle Size
+###### Run commands for the backend service rendereing by ExpressJS
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+$ cd myapplication
 
-### Making a Progressive Web App
+$ npm init
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+###### Run command to add Axios Dependency to connect Express and React application
 
-### Advanced Configuration
+$ npm install --save axios
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+###### Run command to add libraries 
 
-### Deployment
+$ npm install 'react-bootstrap'
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+$ npm install 'react-router-dom'
 
-### `yarn build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Launch
+###### To create react app, run following commands in terminal
+
+$ npx create-react-app myapplication
+
+$ cd myapplication
+
+$ npm start (this will start the created react application and VS code will open where we start playing with our creativity)
+
+###### To run this project, install it locally using npm or using yarn
+
+$ yarn start
+
+Will run the application in the port 3000
+
+## Server-side
+
+###### Libraries/Dependencies
+
+* AWS-SDK
+* Body-parser
+* Express
+
+## Set up
+
+VS code
+AWS account (online Dynamo DB)
+
+###### Run command to add libraries 
+
+$ npm install 'body-parser'
+
+$ npm install --save 'express'
+
+
+## Launch
+###### Commands to create folder and run express
+
+$ npx create-react-app myapplication
+
+$ cd myapplication
+
+$ npm start (this will start the created react application and VS code will open where we start playing with our creativity)
+
+###### To run, install it locally using npm or using yarn
+
+$ node index.js
+
+## Description
+
+* Connect the Dynamo DB to the Express JS by mentioning the connection keys and URL
+* In VS code of Express application, create a table "CreateEmployee" in AWS Dynamo Db
+* Create main index.js in Express application and use the http methods to perform CRUD operations from React frontend to store and make changes in AWS
+* Design the front end in React.js in the IDE VScode
+* Use API calls which connects to the Express which is inturn connected to AWS Dynamo DB
